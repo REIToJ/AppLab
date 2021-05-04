@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h1, h4, h5, h6 {
+    margin: 0;
+}
+
+logo_orange {
+    color: rgb(252,174,97);
+}
+
+text_opac {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/gradient.png") center no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.intro__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+
+    margin-left: -600px;
+
+    text-align: left;
+    line-height: 75px;
+}
+
+.intro__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 100px;
+    max-width: 450px;
+
+    text-align: left;
+    line-height: 28px;
+
+    margin-top: 25px;
+    margin-left: -600px;
+}
+
+.intro__subtitle:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+
+    background-color: white;
+    margin: 10px auto 0;
+}
+
+.header {
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    margin-top: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+
+    margin-left: -150px;
+
+    border-radius: 10px;
+    background-color: white;
+
+    padding: 5px;
+}
+
+
+/* Navigation */
+
+.nav {
+    font-size: 16px;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 0 20px;
+    position: relative;
+
+    color: black;
+    text-decoration: none;
+
+    transition: color 0.3s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: none;
+    width: 100%;
+    height: 3px;
+
+    background-color: rgb(252,174,97);
+    position: absolute;
+
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.nav__link:hover {
+    color: rgb(252,174,97);
+}
+
+.nav__link:hover:after {
+    display: block;
+}
+
+
+/* Buttons */
+
+.button__get {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+
+    border: 3px solid #fff;
+    border-radius: 15px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-align: center;
+
+    margin-top: 10px;
+    margin-left: -600px;
+    
+    background-color: rgb(255, 89, 89);
+}
+
+.button__demo {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-left: 100px; 
+}
